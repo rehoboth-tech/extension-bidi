@@ -19,12 +19,21 @@ repository is what runs.
 
 ## Pin what you install
 
-The install lines in the README and `SKILL.md` fetch from a branch. A branch moves.
-If you want a byte you have reviewed to stay the byte you get, pin a tag or a commit:
-
 ```bash
-npm i github:rehoboth-tech/extension-bidi#v0.1.0
+npm i github:rehoboth-tech/extension-bidi#v0.1.0                 # tag: convenient
+npm i github:rehoboth-tech/extension-bidi#3b8dcb2e0dfe2076f00a23ffa4c0b78329a4321e   # commit: exact
 ```
+
+**A tag is a pointer, and pointers can be moved.** In March 2025 an attacker rewrote
+every version tag of a widely used GitHub Action to point at malicious code; everyone
+who had pinned a tag got the new code on their next run. The same shape happened again
+in March 2026 across four more Actions. So:
+
+- **We do not move published tags.** `v0.1.0` will keep pointing at the commit it points
+  at today. The repository has a rule that rejects a tag update, so this is enforced by
+  GitHub, not only by our intentions.
+- **If you want a guarantee that does not depend on us keeping that promise, pin the
+  commit SHA.** A commit SHA is the content; it cannot be moved by anyone.
 
 That is not a statement about this repository being untrustworthy — it is how you
 should treat every dependency you did not write, including ours.
