@@ -1,6 +1,6 @@
 {
   "name": "extension-bidi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Right-to-left support for browser extensions. Zero dependencies. Five functions for the layers where bidirectional text actually breaks.",
   "type": "module",
   "main": "src/index.js",

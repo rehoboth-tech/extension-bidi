@@ -20,8 +20,10 @@ repository is what runs.
 ## Pin what you install
 
 ```bash
-npm i github:rehoboth-tech/extension-bidi#v0.1.0                 # tag: convenient
-npm i github:rehoboth-tech/extension-bidi#3b8dcb2e0dfe2076f00a23ffa4c0b78329a4321e   # commit: exact
+npm i github:rehoboth-tech/extension-bidi#v0.1.1                 # tag: convenient
+# get the exact commit a tag points at:
+#   git ls-remote https://github.com/rehoboth-tech/extension-bidi.git refs/tags/v0.1.1^{}
+npm i github:rehoboth-tech/extension-bidi#<commit-sha>            # commit: exact
 ```
 
 **A tag is a pointer, and pointers can be moved.** In March 2025 an attacker rewrote
@@ -29,8 +31,8 @@ every version tag of a widely used GitHub Action to point at malicious code; eve
 who had pinned a tag got the new code on their next run. The same shape happened again
 in March 2026 across four more Actions. So:
 
-- **We do not move published tags.** `v0.1.0` will keep pointing at the commit it points
-  at today. The repository has a rule that rejects a tag update, so this is enforced by
+- **We do not move published tags.** Every `vX.Y.Z` keeps pointing at the commit it pointed
+  at when it was published; new content gets a new version number, never a moved tag. The repository has a rule that rejects a tag update, so this is enforced by
   GitHub, not only by our intentions.
 - **If you want a guarantee that does not depend on us keeping that promise, pin the
   commit SHA.** A commit SHA is the content; it cannot be moved by anyone.

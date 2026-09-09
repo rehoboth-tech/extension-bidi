@@ -9,7 +9,7 @@ Right-to-left support for browser extensions. Zero dependencies, five
 functions, no build step required — install it or paste the file.
 
 ```
-npm i github:rehoboth-tech/extension-bidi#v0.1.0
+npm i github:rehoboth-tech/extension-bidi#v0.1.1
 ```
 
 **Not on the npm registry.** `npm i extension-bidi` installs whatever that name
