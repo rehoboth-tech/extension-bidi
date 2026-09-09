@@ -1,0 +1,41 @@
+{
+  "name": "extension-bidi",
+  "version": "0.1.0",
+  "description": "Right-to-left support for browser extensions. Zero dependencies. Five functions for the layers where bidirectional text actually breaks.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "SKILL.md"
+  ],
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "rtl",
+    "bidi",
+    "i18n",
+    "chrome-extension",
+    "browser-extension",
+    "arabic",
+    "hebrew",
+    "persian",
+    "unicode-bidi",
+    "manifest-v3"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rehoboth-tech/extension-bidi"
+  },
+  "homepage": "https://rehobothbuilds.com/chrome-extension-ship-kit",
+  "author": "Rehoboth Tech, LLC"
+}
