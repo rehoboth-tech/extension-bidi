@@ -9,7 +9,7 @@ Right-to-left support for browser extensions. Zero dependencies, five
 functions, no build step required — install it or paste the file.
 
 ```
-npm i github:rehoboth-tech/extension-bidi
+npm i github:rehoboth-tech/extension-bidi#v0.1.0
 ```
 
 **Not on the npm registry.** `npm i extension-bidi` installs whatever that name
@@ -119,3 +119,8 @@ pipeline, the pre-package gates, the screenshot tooling, and about thirty more
 pitfalls — is at [rehobothbuilds.com](https://rehobothbuilds.com/chrome-extension-ship-kit).
 
 MIT — see [LICENSE](LICENSE).
+
+## Security
+
+Report a vulnerability to **support@rehobothbuilds.com** — see [SECURITY.md](SECURITY.md). It also explains why you should pin a tag
+rather than track a branch, for this package and for every other one.

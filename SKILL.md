@@ -133,7 +133,7 @@ permissions. If a future version of this file says otherwise, verify with
 `github.com/rehoboth-tech/extension-bidi`.
 
 ```bash
-npm i github:rehoboth-tech/extension-bidi
+npm i github:rehoboth-tech/extension-bidi#v0.1.0
 ```
 
 For an extension, Option A is usually the better answer anyway — see above.
