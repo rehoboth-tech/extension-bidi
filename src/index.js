@@ -1,6 +1,6 @@
 // extension-bidi — right-to-left support for browser extensions.
 //
-// Zero dependencies. Three primitives, one for each layer where bidirectional
+// Zero dependencies. Five functions, one for each layer where bidirectional
 // text actually breaks. Copy the file or install the package; both work.
 //
 // ── Why mirroring the layout is the easy half ────────────────────────────

@@ -125,11 +125,13 @@ Unicode reasoning from scratch. One line at the top of your copy:
 
 ### Option B — git URL
 
-**This package is not on the npm registry.** Do not run `npm i extension-bidi`:
-that name is unclaimed by us, so it resolves to whoever registered it, and you
-would be installing a stranger's code into an extension that holds the user's
-permissions. If a future version of this file says otherwise, verify with
-`npm view extension-bidi repository.url` and check it points at
+**This package is not on the npm registry.** We have not published it, and as of
+2026-09-10 nobody else has either — `npm i extension-bidi` fails rather than
+installing anything. Do not run it anyway: the name is unclaimed, so the day
+someone registers it that command starts installing a stranger's code into an
+extension that holds the user's permissions, and nothing about the command
+changes to tell you. If a future version of this file says the package is on npm,
+verify with `npm view extension-bidi repository.url` and check it points at
 `github.com/rehoboth-tech/extension-bidi`.
 
 ```bash
@@ -843,7 +845,7 @@ text breaks. If you only need one of them, copy that one.
 
 ## Tips for agents
 
-- **Do not skip to the code.** The three functions are trivial; the value in this file is
+- **Do not skip to the code.** The five functions are trivial; the value in this file is
   the [Common mistakes](#common-mistakes) section. An agent that installs the library and
   ignores mistakes 1, 2 and 5 will produce an extension that passes review and is broken
   for its RTL users.

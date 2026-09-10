@@ -12,10 +12,14 @@ functions, no build step required — install it or paste the file.
 npm i github:rehoboth-tech/extension-bidi#v0.1.1
 ```
 
-**Not on the npm registry.** `npm i extension-bidi` installs whatever that name
-resolves to there, which is not this package — do not run it. The git URL above
-and copying `src/index.js` into your project are the two supported ways in; the
-file is 148 lines with no imports, so the second one is not a downgrade.
+**We have not published this to the npm registry.** As of 2026-09-10 the name
+`extension-bidi` is unregistered there — `npm i extension-bidi` fails rather than
+installing anything. If it ever starts succeeding, someone else claimed the name
+and what you get is not this package: check with
+`npm view extension-bidi repository.url` and confirm it points at
+`github.com/rehoboth-tech/extension-bidi`. The git URL above and copying
+`src/index.js` into your project are the two supported ways in; the file is 148
+lines with no imports, so the second one is not a downgrade.
 
 ## The problem it solves
 
